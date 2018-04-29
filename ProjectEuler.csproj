@@ -55,8 +55,7 @@
     <Compile Include="lib\FibonacciSequence.cs" />
     <Compile Include="lib\PrimeFactors.cs" />
     <Compile Include="Program.cs" />
-    <Compile Include="ProjectEuler.Problem.001.cs" />
-    <Compile Include="ProjectEuler.Problem.002.cs" />
+    <Compile Include="ProjectEuler.Problem.*.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
