@@ -53,7 +53,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="lib\FibonacciSequence.cs" />
-    <Compile Include="lib\PrimeFactors.cs" />
+    <Compile Include="lib\Factors.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="ProjectEuler.Problem.*.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
