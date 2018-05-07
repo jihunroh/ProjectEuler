@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using System.Collections.Generic;
 
 namespace ProjectEuler
 {
@@ -31,7 +32,7 @@ namespace ProjectEuler
 
             return (long) LargestProductInCell(numberGrid).Max();
         }
-        public static System.Collections.Generic.IEnumerable<int?> LargestProductInCell (short[][] numberGrid)
+        public static IEnumerable<int?> LargestProductInCell (short[][] numberGrid)
         {
             int xMax = numberGrid.Length;
             int yMax = numberGrid[0].Length;

@@ -1,4 +1,5 @@
 ﻿using System.Linq;
+using System.Collections.Generic;
 
 namespace ProjectEuler
 {
@@ -6,7 +7,7 @@ namespace ProjectEuler
     {
         public static long Solution()
         {
-            System.Collections.Generic.IEnumerable<int> num = Enumerable.Range(1, 20);
+            IEnumerable<int> num = Enumerable.Range(1, 20);
             return Factors.LCM(num.ToArray());
         }
     }

@@ -9,7 +9,7 @@ namespace ProjectEuler
         /*
          * 입력받은 num의 소인수 목록을 차례대로 반환
          */
-        public static System.Collections.Generic.IEnumerable<int> PrimeFactorsList(long num)
+        public static IEnumerable<int> PrimeFactorsList(long num)
         {
             int divisor = 2;
             while (num % divisor == 0)
@@ -41,7 +41,7 @@ namespace ProjectEuler
                 factorsList.Add( (int)sqrtNumber );
             return factorsList.ToArray();
         }
-        public static System.Collections.Generic.IEnumerable<long> PrimeNumberNth(int index)
+        public static IEnumerable<long> PrimeNumberNth(int index)
         {
             yield return 2;
             long num = 3;
@@ -56,7 +56,7 @@ namespace ProjectEuler
                 num += 2;
             } while (i < index);
         }
-        public static System.Collections.Generic.IEnumerable<long> PrimeNumberBelow(int upperBound)
+        public static IEnumerable<long> PrimeNumberBelow(int upperBound)
         {
             yield return 2;
             long num = 3;

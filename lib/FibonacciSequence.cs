@@ -1,8 +1,10 @@
-﻿namespace ProjectEuler
+﻿using System.Collections.Generic;
+
+namespace ProjectEuler
 {
     class FibonacciSequence
     {
-        public static System.Collections.Generic.IEnumerable<int> SequenceBy(int maxNumber)
+        public static IEnumerable<int> SequenceBy(int maxNumber)
         {
             int a0 = 1;
             int a1 = 2;

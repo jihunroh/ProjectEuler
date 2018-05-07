@@ -1,4 +1,5 @@
 ﻿using System.Linq;
+using System.Collections.Generic;
 
 namespace ProjectEuler
 {
@@ -8,7 +9,7 @@ namespace ProjectEuler
         {
             return PalindromicNumberList().Max();
         }
-        public static System.Collections.Generic.IEnumerable<int> PalindromicNumberList()
+        public static IEnumerable<int> PalindromicNumberList()
         {
             for (int a = 999; a >= 100; a--)
             {

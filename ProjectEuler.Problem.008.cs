@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Linq;
+using System.Collections.Generic;
 
 namespace ProjectEuler
 {
     public class Problem008
     {
-        public static System.Collections.Generic.IEnumerable<string> NumberString(int adjacentLength)
+        public static IEnumerable<string> NumberString(int adjacentLength)
         {
             string numberString = @"73167176531330624919225119674426574742355349194934
 96983520312774506326239578318016984801869478851843
