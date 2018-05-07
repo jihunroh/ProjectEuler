@@ -52,6 +52,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="lib\EnumerableExtension.cs" />
+    <Compile Include="lib\TriangleSequence.cs" />
     <Compile Include="lib\FibonacciSequence.cs" />
     <Compile Include="lib\Factors.cs" />
     <Compile Include="Program.cs" />

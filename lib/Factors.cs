@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using System.Collections.Generic;
 
 namespace ProjectEuler
 {
@@ -31,7 +32,16 @@ namespace ProjectEuler
             }
 
         }
-        public static System.Collections.Generic.IEnumerable<long> PrimeNumber(int index)
+        public static int[] FactorsList(int number)
+        {
+            double sqrtNumber = Math.Pow(number, 0.5);
+            var factorsList = Enumerable.Range(1, (int)Math.Ceiling(sqrtNumber) - 1).Where(x => number % x == 0).ToList();
+            factorsList = factorsList.Concat(factorsList.Select(x => number / x)).ToList();
+            if ((int)sqrtNumber * (int)sqrtNumber == number)
+                factorsList.Add( (int)sqrtNumber );
+            return factorsList.ToArray();
+        }
+        public static System.Collections.Generic.IEnumerable<long> PrimeNumberNth(int index)
         {
             yield return 2;
             long num = 3;
@@ -45,6 +55,19 @@ namespace ProjectEuler
                 }
                 num += 2;
             } while (i < index);
+        }
+        public static System.Collections.Generic.IEnumerable<long> PrimeNumberBelow(int upperBound)
+        {
+            yield return 2;
+            long num = 3;
+            do
+            {
+                if (Factors.IsPrime(num))
+                {
+                    yield return num;
+                }
+                num += 2;
+            } while (num < upperBound);
         }
         public static long GCD(int[] num)
         {

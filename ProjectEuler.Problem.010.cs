@@ -3,11 +3,11 @@ using System.Linq;
 
 namespace ProjectEuler
 {
-    public class Problem007
+    public class Problem010
     {
         public static long Solution()
         {
-            return Factors.PrimeNumberNth(10001).Max();
+            return Factors.PrimeNumberBelow(2000000).Sum();
         }
     }
 }
